@@ -1,0 +1,21 @@
+div #header-wrap
+{
+	margin-top: 40px;
+}
+
+#hide {
+    display:none;
+}
+
+#left
+{
+    float:left;
+    margin-left:45%;
+    margin-top:55px;
+}
+
+.btn-group-vertical > button{
+    margin-bottom:15px;
+    border-radius:10px !important;
+}
+ 

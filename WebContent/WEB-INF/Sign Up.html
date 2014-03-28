@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="WEB-INF/styles.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<form class="form-horizontal" action="/Movie_Database/signup.do"
+			method="post">
+			<fieldset>
+
+				<!-- Form Name -->
+				<legend>Sign up</legend>
+
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="usernameInput">Username</label>
+					<div class="controls">
+						<input id="usernameInput" name="username" type="text"
+							placeholder="Enter username" class="input-xlarge">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="usernameInput">Name</label>
+					<div class="controls">
+						<input id="usernameInput" name="name" type="text"
+							placeholder="Enter name" class="input-xlarge">
+
+					</div>
+				</div>
+
+				<!-- Password input-->
+				<div class="control-group">
+					<label class="control-label" for="passwordinput"> Input
+						password</label>
+					<div class="controls">
+						<input id="passwordinput" name="password" type="password"
+							placeholder="Enter password" class="input-xlarge">
+
+					</div>
+				</div>
+
+				<!-- Password input-->
+				<div class="control-group">
+					<label class="control-label" for="passwordinput">Re-enter
+						password</label>
+					<div class="controls">
+						<input id="passwordinput" name="password2" type="password"
+							placeholder="Enter password" class="input-xlarge">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="emailInput">Email address</label>
+					<div class="controls">
+						<input id="emailInput" name="email" type="text"
+							placeholder="Enter email address" class="input-xlarge">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="ageInput">Date of Birth</label>
+					<div class="controls">
+						<input name="dob" type="date"
+							placeholder="Enter your date of birth" class="input-xlarge">
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="control-group">
+					<label class="control-label" for="GenderInput">Gender</label>
+					<div class="controls">
+						<label class="radio" for="GenderInput-0"> <input
+							type="radio" name="sex" id="GenderInput-0" value="Male"
+							checked="checked"> Male
+						</label> <label class="radio" for="GenderInput-1"> <input
+							type="radio" name="sex" id="GenderInput-1" value="Female">
+							Female
+						</label>
+					</div>
+				</div>
+
+				<!-- Button -->
+				<div class="control-group">
+					<label class="control-label" for="singlebutton">Create an
+						accout</label>
+					<div class="controls">
+						<button id="singlebutton" name="singlebutton"
+							class="btn btn-primary">Sign up!</button>
+					</div>
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>

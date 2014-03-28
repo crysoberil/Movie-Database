@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Movie Database</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>com.movie.controller.HomeController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Sign Up Form</servlet-name>
+		<servlet-class>com.movie.controller.SignUpFormLoader</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Signup Controller</servlet-name>
+		<servlet-class>com.movie.controller.SignUpController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Do Search</servlet-name>
+		<servlet-class>com.movie.controller.SearchController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Login Manager</servlet-name>
+		<servlet-class>com.movie.controller.LogInController</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>Show Movie</servlet-name>
+		<servlet-class>com.movie.controller.ViewMovieController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Show Movie</servlet-name>
+		<url-pattern>/movie</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet-mapping>
+		<servlet-name>Do Search</servlet-name>
+		<url-pattern>/search.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/index.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Login Manager</servlet-name>
+		<url-pattern>/login.do</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet-mapping>
+		<servlet-name>Sign Up Form</servlet-name>
+		<url-pattern>/signup.form</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Signup Controller</servlet-name>
+		<url-pattern>/signup.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Movie Awards</servlet-name>
+		<servlet-class>com.movie.controller.MovieAwardsLoader</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Movie Awards</servlet-name>
+		<url-pattern>/movieawards</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Celeb Awards</servlet-name>
+		<servlet-class>com.movie.controller.CelebrityAwardsLoader</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Celeb Awards</servlet-name>
+		<url-pattern>/celebawards</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>User Review Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadUserReviewsController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>User Review Loader</servlet-name>
+		<url-pattern>/userreviews</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Critic Review Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadCriticReviewController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Critic Review Loader</servlet-name>
+		<url-pattern>/criticreviews</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Toggle Watchlist Status</servlet-name>
+		<servlet-class>com.movie.controller.ToggleInWatchListController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Toggle Watchlist Status</servlet-name>
+		<url-pattern>/togglewatchliststat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Toggle Favorite Movie Status</servlet-name>
+		<servlet-class>com.movie.controller.ToggleInFavoriteMoviesController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Toggle Favorite Movie Status</servlet-name>
+		<url-pattern>/togglefavoritemoviesstat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Toggle Favorite Celeb Status</servlet-name>
+		<servlet-class>com.movie.controller.ToggleInFavoteCelebListController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Toggle Favorite Celeb Status</servlet-name>
+		<url-pattern>/togglefavoritecelebsstat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Watch List Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadWatchListController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Watch List Loader</servlet-name>
+		<url-pattern>/checkwatchlist.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Downloaded Movies Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadDownloadedMoviesController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Downloaded Movies Loader</servlet-name>
+		<url-pattern>/showdownloadedmovies.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Favorite Celeb List Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadFavoriteCelebrityController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Favorite Celeb List Loader</servlet-name>
+		<url-pattern>/showfavoritecelebs.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Favorite Movie List Loader</servlet-name>
+		<servlet-class>com.movie.controller.LoadFavoriteMoviesController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Favorite Movie List Loader</servlet-name>
+		<url-pattern>/showfavoritemovies.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Celebrity Profile Loader</servlet-name>
+		<servlet-class>com.movie.controller.ViewCelebProfileController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Celebrity Profile Loader</servlet-name>
+		<url-pattern>/celebrity</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.movie.controller.LogoutController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Submit Review</servlet-name>
+		<servlet-class>com.movie.controller.SubmitReviewController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Submit Review</servlet-name>
+		<url-pattern>/movie/submitmoviereview.do</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
