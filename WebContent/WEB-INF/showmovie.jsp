@@ -132,7 +132,7 @@
 
 			<p><%=movieInfo.getLength()%>
 				min ---
-				<%=movieInfo.getGenreList()%>
+				<%=movieInfo.getGenresAsString()%>
 				---
 				<%=movieInfo.getReleaseYear()%>
 				--- Rating:<%=movieInfo.getRating()%>
@@ -193,12 +193,12 @@
 
 				<input name="star2" type="radio" value="1" class="star" /> <input
 					name="star2" type="radio" value="2" class="star" /> <input
-					name="star2" type="radio" value="3" class="star" checked="checked" />
+					name="star2" type="radio" value="3" class="star" />
 				<input name="star2" type="radio" value="4" class="star" /> <input
 					name="star2" type="radio" value="5" class="star" /> <input
 					name="star2" type="radio" value="6" class="star" /> <input
 					name="star2" type="radio" value="7" class="star" /> <input
-					name="star2" type="radio" value="8" class="star" checked="checked" />
+					name="star2" type="radio" value="8" class="star" />
 				<input name="star2" type="radio" value="9" class="star" /> <input
 					name="star2" type="radio" value="10" class="star" />
 			</fieldset>
